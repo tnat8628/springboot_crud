@@ -8,9 +8,12 @@
 <!-- Định nghĩa fragment -->
 <div th:fragment="header">
     <header>
+    	<div style="display:flex; align-items: center;">
+    		<img src="/images/avatar.jpg" alt="Logo" style = "height: 100px;">
+    	</div>
         <nav>
             <ul>
-                <li><a th:href="@{/home}">Home</a></li>
+                <li><a th:href="@{'/admin/categories'}">List</a></li>
                 <li><a th:href="@{/about}">About</a></li>
                 <li><a th:href="@{/contact}">Contact</a></li>
             </ul>
